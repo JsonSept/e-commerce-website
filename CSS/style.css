@@ -38,26 +38,36 @@ nav a:hover {
     display: flex;
     justify-content: center;
     font-size: xx-large;
-    background-color: rgb(255, 0, 204);
+    background-color: rgb(79, 73, 78);
     animation-name: example;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
   }
     
-#cont1 ,#cont2 ,#cont3 ,#cont4 {
-    width:100%;
-    height: 39rem;
-    box-shadow: 0 0 2rem 0 rgb(69, 70, 66);
-    display: flex;
-    justify-content: center;
-    align-content: center;
+#cont1 ,#cont2 ,#cont3 ,#cont4 ,#cont5 ,#cont6 ,#cont7 ,#cont8 {
     
+    border: 1px solid;
+    border-style: dashed;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    text-align: center;
+    display: flex;
+    padding-left: 2%;
+    padding-bottom: 2%;
 }
 
 img {
-    padding-top: 30px;
+ 
+    margin-top: 2%;
     width: 30%;
     height: 80%;
+    box-shadow: 0 0 2rem 0 rgb(69, 70, 66);
+    @media screen and (max-width: 480px) {
+        img {
+          width: 300px;
+          height: 300px;
+        }
+}
 }
 .about {
     display: grid;
@@ -108,6 +118,29 @@ tr, td {
     margin-top: 5%;
    padding-top: 7%;
   } 
+  .cof5, p {
+    margin-left: 5%;
+    margin-top: 5%;
+   padding-top: 7%;
+  } 
+
+  .cof6, p {
+    margin-left: 5%;
+    margin-top: 5%;
+   padding-top: 7%;
+  } 
+
+  .cof7, p {
+    margin-left: 5%;
+    margin-top: 5%;
+   padding-top: 7%;
+  } 
+  
+  .cof8, p {
+    margin-left: 5%;
+    margin-top: 5%;
+   padding-top: 7%;
+  } 
 
   form {
     padding-top: 10%;
@@ -117,5 +150,18 @@ tr, td {
   }
 
   body {
+    background-image: url(/img/);
     background-color: lightgray;
+    
+  }
+  section  {
+    margin-right: 5%;
+    margin-top: 20%;
+    text-align: center;
+
+  }
+
+  .sects {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
   }
