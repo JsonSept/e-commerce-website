@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  color: #fff;
 }
 
 nav {
@@ -26,12 +25,7 @@ nav a:hover {
 
 }
 
-.logo1 {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    size: 20%;
-}
+
 
 
 @keyframes example {
@@ -72,31 +66,29 @@ img {
     width: 30%;
     height: 30%;
     box-shadow: 0 0 2rem 0 rgb(69, 70, 66);
-    @media screen and (max-width: 480px) {
-        img {
-          width: 30%;
-          height: 30%;
-        }
-}
+   
+
 }
 .about {
     display: grid;
     justify-content: center;
     align-content: center;
+    font-weight: bold;
+    font-size: large;
 }
-.logo {
-    padding-left: 40%;
-}
-.logo:hover {
-  transition-property: all;
-  object-position: bottom;
+
+th, td {
+  text-align: left;
+  padding: 8px;
 }
 table {
     margin-left: auto;
   margin-right: auto;
-    width: 100%;
     border-width: 5px;
     margin-top: 30%;
+    border-style: double;
+border-collapse: collapse;
+width: 100%;
 }
 table, th, td {
     border: 1px solid black;
@@ -106,53 +98,81 @@ table, th, td {
     
   }
 tr, td {
-    padding-left:inherit;
+    justify-content: center;
+    align-content: center;
+
+
+    
 }
   .cof1, p {
     margin-left: 5%;
     margin-top: 5%;
    padding-top: 7%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
   } 
 
   .cof2, p {
     margin-left: 5%;
     margin-top: 5%;
    padding-top: 7%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
   } 
 
   .cof3, p {
     margin-left: 5%;
     margin-top: 5%;
    padding-top: 7%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
   } 
 
   .cof4, p {
     margin-left: 5%;
     margin-top: 5%;
    padding-top: 7%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
   } 
   .cof5, p {
     margin-left: 5%;
     margin-top: 5%;
    padding-top: 7%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
   } 
 
   .cof6, p {
     margin-left: 5%;
     margin-top: 5%;
    padding-top: 7%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
   } 
 
   .cof7, p {
     margin-left: 5%;
     margin-top: 5%;
    padding-top: 7%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
   } 
   
   .cof8, p {
     margin-left: 5%;
     margin-top: 5%;
    padding-top: 7%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
   } 
 
   form {
@@ -183,16 +203,13 @@ tr, td {
       }
     }
   section  {
+    padding: auto;
     margin-right: 5%;
     margin-top: 20%;
     text-align: center;
 
   }
 
-  .sects {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  }
   .bg1 {
     position: sticky;
     height: 100%;
@@ -205,3 +222,64 @@ tr, td {
   input {
     color: black;
   }
+
+  .banking {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+ button {
+  width: 30%;
+  border:1px solid black;
+  border-radius: 20%;
+  }
+
+  button:hover {
+    background-color: purple;
+    color: white;
+  }
+
+  .socials {
+    margin-left: 8%;
+    margin-top: 2%;
+    display: flex;
+    margin-bottom: 0;
+    padding-bottom: 4%;
+    align-content: center;
+    justify-content: center;
+    justify-content: space-around;
+    transition: all .2s ease-in-out; 
+
+    position: -webkit-sticky;
+    position: sticky;
+  }
+
+  .socials .icon1 ,.icon2 ,.icon3 ,.icon4 {
+    box-sizing: content-box;
+    height: fit-content;
+    width: fit-content;
+    
+  }
+  .icon1:hover {
+    transform: scale(1.1); 
+    
+  }
+  
+  .icon2:hover {
+    transform: scale(1.1); 
+
+  }
+  
+  .icon3:hover {
+    transform: scale(1.1); 
+  }
+  
+  .icon4:hover {
+    transform: scale(1.1); 
+  }
+  
+    .icon2 {
+height: 100%;
+width: 100%;
+    }

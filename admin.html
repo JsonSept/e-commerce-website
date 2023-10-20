@@ -14,39 +14,53 @@
         <a href="admin.html">ADMIN</a>
         <a href="contact.html">CONTACT</a>
     </nav>
-
-    <form action="/action_page.php">
+ 
+      
+<div class="banking">
+        
+    
+     <form>
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname" value=""><br>
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname" name="lname" value=""><br><br>
         <label for="fname">Email:</label><br>
         <input type="text" id="fname" name="fname" value=""><br>
-      </form>
-
-    <form>
-        <label for="bev1">Regular Coffee
-        <input type="checkbox" id="bev1" name="b3v1" value="">
-    </label>
         <br>
-        <label for="bev2">cuppacino
-        <input type="checkbox" id="bev2" name="bev2" value="">
-    </label>
-        <br>
-        <label for="bev3">Coffee Flavoured Milkshake
-        <input type="checkbox" id="bev3" name="bev3" value="">
+        <label>
+          <span class="nmoncd">Name on Card</span>
+          <input name="nameoncard" type="text" placeholder="input">
         </label>
         <br>
-        <label for="bev4">Iced Coffee Mocha
-        <input type="checkbox" id="bev4" name="bev4" value="">
-    </label>
-        
-        <br><br>
-        <input type="submit" value="Submit">
+        <label> 
+          <span class="cdnum">Card Number <span>(Dashes not required)</span></span>
+          <input name="cardnumber" type="text" placeholder="cardnumber">
+        </label>
         <br>
-        <input type="reset" value="Reset">
-    </form>
-    
-   
+        <label class="exp">
+          <span class="expdt">Exp. Date</span>
+          <input name="experationdate" type="text" placeholder="MM/YYYY">
+        </label>
+        <br>
+        <label class="cvc">
+          <span class="cvcnum">CVC</span>
+          <input name="cvcnumber" type="text" placeholder="CVC">
+        </label>
+        <br>
+        <button type="submit" >
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <style>
+        @media (min-width:300px){
+            form{
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            
+        }
+    </style>
 </body>
 </html>
