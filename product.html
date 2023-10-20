@@ -6,7 +6,7 @@
         <title>My Shop</title>
         <link rel="stylesheet" href="/CSS/style.css">
      </head>
-     <body>
+     <body class="bg1">
         <nav>
             <a href="index.html">HOME</a>
             <a href="about.html">ABOUT</a>
@@ -15,38 +15,132 @@
             <a href="contact.html">CONTACT</a>
         </nav>
 
-        <div id="cont1">
-            <img src="/img/coffee beans.jpg" alt="">
-            <div class="cof1">
-                <h2>Regular Coffee</h2>
-                <p><b>Our coffee is made from the finest coffee beans.</b></p>
-            </div>
+<div class="grid-container">
+    <div class="item1"><img src="/img/coffee beans.jpg" alt="">
+        <div id="text1">
+            <h2>Regular Coffee</h2>
+            <p><b>Our coffee is made from the finest coffee beans.</b></p>
+            <br>
+            <p><b>Price</b></p>
+            <p><b>R12,00</b></p>
+            <br>
+            <button class="order">Add to order</button>
         </div>
     
-        <div id="cont2">
-            <img src="/img/cuppachino.jpg" alt="">
-            <div class="cof2">
-                <h2>cuppacino</h2>
-                <p><b>Creamy morning pick me up with extra creamy texture.</b></p>
-            </div>
+    </div>
+    <div class="item2"><img src="/img/cuppachino.jpg" alt="">
+        <div id="text2">
+            <h2>cuppacino</h2>
+            <p><b>Creamy morning pick me up with extra creamy texture.</b></p>
+            <br>
+            <p><b>Price</b></p>
+            <p><b>R15,00</b></p>
+            
+            <br>
+            <button class="order">Add to order</button>
+            
         </div>
-    
-        <div id="cont3">
-            <img src="/img/coffee-milkshake.jpg" alt="">
-            <div class="cof3">
-                <h2>Coffee Flavoured Milkshake</h2>
-                <p><b>Creamy coffee flavoured milkshake.</b></p>
-            </div>
+    </div>
+    <div class="item3"><img src="/img/coffee-milkshake.jpg" alt="">
+        <div id="text3">
+            <h2>Coffee Flavoured Milkshake</h2>
+            <p><b>Creamy coffee flavoured milkshake.</b></p>
+            <br>
+            <p><b>Price</b></p>
+            <p><b>R25,00</b></p>
+            
+            <br>
+            <button class="order">Add to order</button>
+            
         </div>
-    
-        <div id="cont4">
-            <img src="/img/mocha-iced-coffee.jpg" alt="">
-            <div class="cof4">
-                <h2>Iced Coffee Mocha</h2>
-                <p><b>Cold creamy choc cafe mocha with caramel / choc sauce.</b></p>
+    </div>  
+    <div class="item4"><img src="/img/mocha-iced-coffee.jpg" alt="">
+        <div id="text4">
+            <h2>Iced Coffee Mocha</h2>
+            <p><b>Cold creamy choc cafe mocha with caramel / choc sauce.</b></p>
+            <br>
+            <p><b>Price</b></p>
+            <p><b>R25,00</b></p>
+            
+            <br>
+            <button class="order">Add to order</button>
+            
         </div>
+    </div>
+    <div class="item5"><img src="/img/bubbleTea.jpg" alt="">
+        <div id="text5">
+            <h2>Bubble Tea</h2>
+            <p><b>Sweet and creamy bubble tea.</b></p>
+            <br>
+        <p><b>Price</b></p>
+        <p><b>R23,00</b></p>
+        
+        <br>
+        <button class="order">Add to order</button>
+        
+    </div>
+    </div>
+    <div class="item6"><img src="/img/chocChip.jpg" alt="">
+        <div id="text6">
+            <h2>Chocolate Chip Muffins</h2>
+            <p><b>Choc chip muffins fresh out the oven.</b></p>
+            <br>
+            <p><b>Price</b></p>
+            <p><b>R10,00</b></p>
+            
+            <br>
+            <button class="order">Add to order</button>
+        </div>
+    </div>
+    <div class="item7"><img src="/img/bran-muffins-14.jpg" alt="">
+        <div id="text7">
+            <h2>Bran Muffins</h2>
+            <p><b>Bran breakfast muffins for those who tried to skip breakfast.</b></p>
+            <br>
+            <p><b>Price</b></p>
+            <p><b>R10,00</b></p>
+            
+            <br>
+            <button class="order">Add to order</button>
+        </div>
+    </div>
+    <div class="item8"><img src="/img/blueberry.jpg" alt="">
+        <div id="text8">
+            <h2>Blue Berry Muffins</h2>
+            <p><b>Sweet and tasty Blue Berry muffins.</b></p>
+            <br>
+            <p><b>Price</b></p>
+            <p><b>R10,00</b></p>
+
+            <br>
+            <button class="order">Add to order</button>
+            
+    </div>
+    </div>
+  </div>
+
+  <style>
+    .grid-container {
+      display: -ms-inline-grid;
+      grid-gap: 30px;
+      padding: 10px;
+    }
     
-    
+    .grid-container > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+      border-radius: 30px;
+      margin-bottom: 20px;
+    }
+    .order {
+        justify-content: center;
+        align-content: center;
+        height: 16%;
+        width: 20%;
+    }
+    </style>
      </body>
      </html>
     

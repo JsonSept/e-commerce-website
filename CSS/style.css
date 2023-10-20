@@ -1,10 +1,17 @@
+* {
+  margin: 0;
+}
+
 nav {
-    padding-block: 5%;
+    padding-block: 3%;
     display:flex;
     justify-content: center;
     align-content: center;
     justify-content: space-around;
     background-color: black;
+    position: -webkit-sticky;
+  position: sticky;
+  top: 0;;
 }
 
 nav a {
@@ -18,12 +25,7 @@ nav a:hover {
 
 }
 
-.logo1 {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    size: 20%;
-}
+
 
 
 @keyframes example {
@@ -35,45 +37,58 @@ nav a:hover {
   
   
   h1 {
+    padding-block: 5%;
     display: flex;
     justify-content: center;
     font-size: xx-large;
-    background-color: rgb(255, 0, 204);
+    background-color: rgb(79, 73, 78);
     animation-name: example;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
   }
     
-#cont1 ,#cont2 ,#cont3 ,#cont4 {
-    width:100%;
-    height: 39rem;
-    box-shadow: 0 0 2rem 0 rgb(69, 70, 66);
-    display: flex;
-    justify-content: center;
-    align-content: center;
+#cont1 ,#cont2 ,#cont3 ,#cont4 ,#cont5 ,#cont6 ,#cont7 ,#cont8 {
     
+    border: 1px solid black;
+    border-style:double;
+    margin-bottom:30px;
+    margin-left: 4%;
+    margin-top: 20%;
+    text-align: center;
+    display: flex;
+    padding-left: 2%;
+    padding-bottom: 2%;
 }
 
 img {
-    padding-top: 30px;
+ 
+    margin-top: 2%;
     width: 30%;
-    height: 80%;
+    height: 30%;
+    box-shadow: 0 0 2rem 0 rgb(69, 70, 66);
+   
+
 }
 .about {
     display: grid;
     justify-content: center;
     align-content: center;
-}
-.logo {
-    padding-left: 40%;
+    font-weight: bold;
+    font-size: large;
 }
 
+th, td {
+  text-align: left;
+  padding: 8px;
+}
 table {
     margin-left: auto;
   margin-right: auto;
-    width: 100%;
     border-width: 5px;
     margin-top: 30%;
+    border-style: double;
+border-collapse: collapse;
+width: 100%;
 }
 table, th, td {
     border: 1px solid black;
@@ -83,39 +98,188 @@ table, th, td {
     
   }
 tr, td {
-    padding-left:inherit;
+    justify-content: center;
+    align-content: center;
+
+
+    
 }
   .cof1, p {
     margin-left: 5%;
     margin-top: 5%;
    padding-top: 7%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
   } 
 
   .cof2, p {
     margin-left: 5%;
     margin-top: 5%;
    padding-top: 7%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
   } 
 
   .cof3, p {
     margin-left: 5%;
     margin-top: 5%;
    padding-top: 7%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
   } 
 
   .cof4, p {
     margin-left: 5%;
     margin-top: 5%;
    padding-top: 7%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+  } 
+  .cof5, p {
+    margin-left: 5%;
+    margin-top: 5%;
+   padding-top: 7%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+  } 
+
+  .cof6, p {
+    margin-left: 5%;
+    margin-top: 5%;
+   padding-top: 7%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+  } 
+
+  .cof7, p {
+    margin-left: 5%;
+    margin-top: 5%;
+   padding-top: 7%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+  } 
+  
+  .cof8, p {
+    margin-left: 5%;
+    margin-top: 5%;
+   padding-top: 7%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
   } 
 
   form {
+    display: flex;
     padding-top: 10%;
     display: grid;
     justify-content: center;
     align-content: center;
   }
 
-  body {
-    background-color: lightgray;
+  .bg {
+      height: 120vh;
+      width: 100%;
+      background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+      background-size: 300% 300%;
+      animation: color 12s ease-in-out infinite;
+    }
+  
+    @keyframes color{
+      0%{
+        background-position: 0 50%;
+      }
+      50%{
+        background-position: 100% 50%;
+      }
+      100%{
+        background-position: 0 50%;
+      }
+    }
+  section  {
+    padding: auto;
+    margin-right: 5%;
+    margin-top: 20%;
+    text-align: center;
+
   }
+
+  .bg1 {
+    position: sticky;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+  }
+
+  input {
+    color: black;
+  }
+
+  .banking {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+ button {
+  width: 30%;
+  border:1px solid black;
+  border-radius: 20%;
+  }
+
+  button:hover {
+    background-color: purple;
+    color: white;
+  }
+
+  .socials {
+    margin-left: 8%;
+    margin-top: 2%;
+    display: flex;
+    margin-bottom: 0;
+    padding-bottom: 4%;
+    align-content: center;
+    justify-content: center;
+    justify-content: space-around;
+    transition: all .2s ease-in-out; 
+
+    position: -webkit-sticky;
+    position: sticky;
+  }
+
+  .socials .icon1 ,.icon2 ,.icon3 ,.icon4 {
+    box-sizing: content-box;
+    height: fit-content;
+    width: fit-content;
+    
+  }
+  .icon1:hover {
+    transform: scale(1.1); 
+    
+  }
+  
+  .icon2:hover {
+    transform: scale(1.1); 
+
+  }
+  
+  .icon3:hover {
+    transform: scale(1.1); 
+  }
+  
+  .icon4:hover {
+    transform: scale(1.1); 
+  }
+  
+    .icon2 {
+height: 100%;
+width: 100%;
+    }
